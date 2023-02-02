@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
     background-color: green;
@@ -8,6 +14,7 @@ body {
     height: 100vh;
 }
 
+/*Barra de Menu*/
 header {
      position: fixed;
      width: 100%;
@@ -117,3 +124,16 @@ header {
     }
     
 }
+/*Barra de Menu*/
+
+/*Conteudo Da Página*/
+
+.imagem {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 69%;
+    height: 400px;
+    border-radius: 180%;
+    background: #000;
+}
+/*Conteudo Da Página*/
