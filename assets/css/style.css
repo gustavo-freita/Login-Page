@@ -5,5 +5,44 @@ body {
     background-size: cover;
     background-position: center center;
     height: 100vh;
+}
 
+header {
+     position: fixed;
+     width: 100%;
+     left: 0;
+     top: 0;
+     z-index: 1;
+     border-right: none;
+     background: transparent;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.container {
+    color: black;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+}
+.logo {
+    width: 8rem;
+    margin-right: 50px;
+}
+
+.bar__menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 120px;
+}
+
+.bar__link {
+    position: relative;
 }
