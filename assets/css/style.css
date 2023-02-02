@@ -1,3 +1,4 @@
+
 body {
     background-color: green;
     background-image: url(../img/fundo.jpg);
@@ -45,4 +46,74 @@ header {
 
 .bar__link {
     position: relative;
+}
+
+.bar__link::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.bar__link:hover::after {
+    width: 100%;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar__burger {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar__burger:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar__burger:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.active .bar__burger:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar__menu  {
+        position: fixed;
+        left: 100%;
+        top: 85px;
+        gap: 0;
+        
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        margin-right: 0;
+    }
+
+    .bar__item {
+        margin: 10px 0;
+    }
+
+    .bar__menu.active {
+        left: -120px;
+    }
+    
 }
