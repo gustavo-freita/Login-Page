@@ -152,14 +152,6 @@ header {
     gap: 25px;
 }
 
-.formulario .form.signin {
-    display: none;
-}
-
-.formulario.signinForm .form.signin {
-    display: flex;
-}
-
 .formulario .form h1 {
     font-size: 30px;
     color: #000;
@@ -167,6 +159,9 @@ header {
     letter-spacing: 0.1em;
 }
 
+.formulario .form .user {
+    font-size: 50px;
+}
 .formulario .form .inputCaixa {
     position: relative;
     width: 300px;
@@ -202,7 +197,7 @@ header {
 .formulario .form .inputCaixa input:valid ~ span,
 .formulario .form .inputCaixa input:focus ~ span{
     color: #01301c;
-    transform: translateX(25px) translateY(-1px);
+    transform: translateX(38px) translateY(1px);
     font-size: 0.6em;
     padding: 0 5px;
 } 
