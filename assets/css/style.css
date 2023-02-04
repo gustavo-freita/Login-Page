@@ -127,10 +127,118 @@ header {
 /*Barra de Menu*/
 
 /*Conteudo Da Página*/
+.posicionamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-bottom: -37%;
+    margin-right: 60%;
+}
+
+.formulario {
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid #82bd25;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.35),
+    inset -5px -5px 15px rgba(255,255,255,0.1), inset 5px 5px 15px rgba(0,0,0,0.35); 
+}
+
+.formulario .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.formulario .form.signin {
+    display: none;
+}
+
+.formulario.signinForm .form.signin {
+    display: flex;
+}
+
+.formulario .form h1 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.formulario .form .inputCaixa {
+    position: relative;
+    width: 300px;
+}
+
+.formulario .form .inputCaixa input {
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background: #82bd25;
+    border-radius: 1px solid rgba(0,0,0,0.1);
+    color: #000;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.1), 5px 5px 15px rgba(0,0,0,0.35);
+    transition: 0.5s;
+    outline: none;
+}
+
+.formulario .form .inputCaixa span {
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgba(255,255,255,0.5);
+}
+
+.formulario .form .inputCaixa input:valid ~ span,
+.formulario .form .inputCaixa input:focus ~ span{
+    color: #01301c;
+    transform: translateX(25px) translateY(-1px);
+    font-size: 0.6em;
+    padding: 0 5px;
+} 
+.formulario .form .inputCaixa i {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    width: 25px;
+    padding: 2px 0;
+    padding-right: 8px; 
+    color: #01301c;
+    border-right: 1px solid #01301c;
+}
+
+.formulario .form .inputCaixa input[type="submit"] {
+    background: #6a9f25;
+    color: #000;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 1px solid rgba(0,0,0,0.1);
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.1), 5px 5px 15px rgba(0,0,0,0.35);
+}
+
+.formulario .form p {
+    color: #000;
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.formulario .form p a {
+    font-weight: 500;
+    color: #fff;
+}
 
 .imagem {
-    display: flex;
-    align-items: flex-end;
     margin-left: 69%;
     height: 400px;
     border-radius: 180%;

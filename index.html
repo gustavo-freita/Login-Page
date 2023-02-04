@@ -28,10 +28,10 @@
     </header>
 
     <main>
-        <section>
+        <section class="posicao">
             <div class="posicionamento">
                 <div class="formulario">
-                    <div class="form singup">
+                    <div class="form signup">
                         <h1>Cadastro</h1>
                         <div class="inputCaixa">
                             <input type="text" required="required">
@@ -56,13 +56,30 @@
                         <div class="inputCaixa">
                             <input type="submit" value="Criar uma Conta">
                         </div>
-                        <p>Já possui uma conta? <a href="#" class="login">Ir para Log in</a></p>
+                        <p>Já possui uma conta? <a href="#" class="login">Ir para Login</a></p>
                     </div>
-                    <div class="form singin"></div>
+
+                    <div class="form signin">
+                        <h1>Fazer login</h1>
+                        <div class="inputCaixa">
+                            <input type="text" required="required">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Nome de Usuário</span>
+                        </div>
+                        <div class="inputCaixa">
+                            <input type="password" required="required">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Senha</span>
+                        </div>
+                        <div class="inputCaixa">
+                            <input type="submit" value="Entrar">
+                        </div>
+                        <p>Não possui uma conta? <a href="#" class="criar">Ir para Cadastro</a></p>
+                    </div>
                 </div>
             </div>
             <img class="imagem" src="./assets/img/login.png" alt="">
-        </section>
+        </sectione>
 
         <footer>
             
@@ -70,5 +87,6 @@
 
     </main>
     <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/formulario.js"></script>
 </body>
 </html>
