@@ -212,52 +212,27 @@ header {
     }
 
     .logo {
-        margin-right: 20%;
-    }
-    .burger {
-        display: block;
-    }
-
-    .burger.active .bar__burger:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger.active .bar__burger:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .burger.active .bar__burger:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .bar__menu  {
-        position: fixed;
-        left: 100%;
-        top: 71px;
-        gap: 0;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;
-        transition: 0.3s;
-        margin-right: 0;
-        z-index: 1;
-        background: rgba(196, 196, 196, 0.11);
-        backdrop-filter: blur(10px);
-        border-bottom: solid 1px rgba(255, 255, 255, 0.452);
-    }
-
-    .bar__item {
-        margin: 10px 0;
-    }
-
-    .bar__menu.active {
-        left: -210px;
+        display: none;
     }
     
     .imagem {
         display: none;
     }
 
+    .navbar {
+        min-height: 80px;
+    }
+
+    .bar__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .container {
+        font-size: 15px;
+    }
     .posicionamento {
         display: flex;
         align-items: center;
